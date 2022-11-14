@@ -1,42 +1,44 @@
-public class WormAnimation{
-    public static void main( String[] args ) throws Exception
-	{
-		for ( int i=0; i<80; i++ )
-		{
-			if ( i%16 == 0 )
+public class WormAnimation {
+	/**
+	 * @param args
+	 * @throws Exception
+	 */
+	public static void main(String[] args) throws Exception {
+		for (int i = 0; i < 80; i++) {
+			if (i % 16 == 0)
 				System.out.print(" ********                 \r");
-			else if ( i%16 == 1 )
+			else if (i % 16 == 1)
 				System.out.print("   ********               \r");
-			else if ( i%16 == 2 )
+			else if (i % 16 == 2)
 				System.out.print("     ********             \r");
-			else if ( i%16 == 3 )
+			else if (i % 16 == 3)
 				System.out.print("       ********           \r");
-			else if ( i%16 == 4 )
+			else if (i % 16 == 4)
 				System.out.print("         ********         \r");
-			else if ( i%16 == 5 )
+			else if (i % 16 == 5)
 				System.out.print("           ********       \r");
-			else if ( i%16 == 6 )
+			else if (i % 16 == 6)
 				System.out.print("             ********     \r");
-			else if ( i%16 == 7 )
+			else if (i % 16 == 7)
 				System.out.print("               ********   \r");
-			else if ( i%16 == 8 )
+			else if (i % 16 == 8)
 				System.out.print("                 ******** \r");
-			else if ( i%16 == 9 )
+			else if (i % 16 == 9)
 				System.out.print("               ********   \r");
-			else if ( i%16 == 10 )
+			else if (i % 16 == 10)
 				System.out.print("             ********     \r");
-			else if ( i%16 == 11 )
+			else if (i % 16 == 11)
 				System.out.print("           ********       \r");
-			else if ( i%16 == 12 )
+			else if (i % 16 == 12)
 				System.out.print("         ********         \r");
-			else if ( i%16 == 13 )
+			else if (i % 16 == 13)
 				System.out.print("       ********           \r");
-			else if ( i%16 == 14 )
+			else if (i % 16 == 14)
 				System.out.print("     ********             \r");
-			else if ( i%16 == 15 )
+			else if (i % 16 == 15)
 				System.out.print("   ********               \r");
 
-			Thread.sleep(200);
+			// Thread.sleep(200);
 		}
 
 	}

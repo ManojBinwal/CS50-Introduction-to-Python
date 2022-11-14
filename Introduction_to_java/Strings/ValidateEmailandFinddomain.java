@@ -16,32 +16,28 @@ public class ValidateEmailandFinddomain {
         System.out.println(domain);
 
     }
-    public static String FindDomain(String str)
-    {
+
+    public static String FindDomain(String str) {
         int start = str.indexOf("@");
-        //System.out.println(start);
+        // System.out.println(start);
         String domain = "";
         int end = str.length();
-        int i = 0;
-        while(start<end-1){
-            domain += str.charAt(start+1);
+        while (start < end - 1) {
+            domain += str.charAt(start + 1);
             start = start + 1;
         }
         return domain;
     }
 
-    public static boolean ValidateEmail(String str)
-    {
+    public static boolean ValidateEmail(String str) {
         boolean isemail = str.matches("[a-zA-Z0-9._]*[@][a-zA-Z]*[.com]*");
         return isemail;
     }
 
-    public static String FindUsername(String str)
-    {
+    public static String FindUsername(String str) {
         int i = 0;
         String username = "";
-        while(str.charAt(i)!='@')
-        {
+        while (str.charAt(i) != '@') {
             username += str.charAt(i);
             i++;
         }

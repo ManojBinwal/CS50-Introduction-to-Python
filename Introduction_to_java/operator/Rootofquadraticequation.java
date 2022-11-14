@@ -7,6 +7,7 @@
  */
 
 import java.util.Scanner;
+
 public class Rootofquadraticequation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -15,11 +16,12 @@ public class Rootofquadraticequation {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        double z = (int)(Math.sqrt(b*b - 4*a*c));
-        double r1 = (b*-1 + z) / 2*a;
-        double r2 = (b*-1 - z) / 2*a;
+        double z = (int) (Math.sqrt(b * b - 4 * a * c));
+        double r1 = (b * -1 + z) / 2 * a;
+        double r2 = (b * -1 - z) / 2 * a;
 
         System.out.println("r1: " + r1 + " r2: " + r2);
+        sc.close();
 
     }
 
