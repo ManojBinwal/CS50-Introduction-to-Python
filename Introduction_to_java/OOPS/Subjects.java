@@ -6,7 +6,6 @@ class Subjects {
     private int maxMarks = 100;
     private int minMarks = 33;
     private int marksObt;
-    private char result;
 
     public Subjects(String subId, String subName, int marksObt) {
         this.marksObt = marksObt;
@@ -14,9 +13,7 @@ class Subjects {
         this.subName = subName;
 
         if (marksObt < minMarks) {
-            result = 'F';
         } else {
-            result = 'P';
         }
     }
 
@@ -61,7 +58,6 @@ class Subjects {
     }
 
     public void promote() {
-        result = 'P';
     }
 
     public String toString() {

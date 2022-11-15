@@ -8,8 +8,7 @@ public class Cuboid extends Rectangle {
     }
 
     public Cuboid(int length, int breadth, int height) {
-        this.length = length;
-        this.breadth = breadth;
+        super(length, breadth);
         this.height = height;
     }
 
@@ -18,7 +17,7 @@ public class Cuboid extends Rectangle {
     }
 
     public static void main(String[] args) {
-        Cuboid c = new Cuboid();
+        Cuboid c = new Cuboid(5, 6, 7);
         System.out.println(c.volume());
     }
 

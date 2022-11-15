@@ -3,7 +3,7 @@ public class WormAnimation {
 	 * @param args
 	 * @throws Exception
 	 */
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		for (int i = 0; i < 80; i++) {
 			if (i % 16 == 0)
 				System.out.print(" ********                 \r");
