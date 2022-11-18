@@ -1,9 +1,10 @@
 public class WormAnimation {
 	/**
 	 * @param args
+	 * @throws InterruptedException
 	 * @throws Exception
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		for (int i = 0; i < 80; i++) {
 			if (i % 16 == 0)
 				System.out.print(" ********                 \r");
@@ -38,7 +39,7 @@ public class WormAnimation {
 			else if (i % 16 == 15)
 				System.out.print("   ********               \r");
 
-			// Thread.sleep(200);
+				Thread.sleep(200);
 		}
 
 	}
