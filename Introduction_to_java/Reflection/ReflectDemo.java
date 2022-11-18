@@ -1,3 +1,4 @@
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
 class My {
@@ -22,6 +23,10 @@ public class ReflectDemo {
         Field field[] = c.getDeclaredFields();
         for(Field f:field) {
         System.out.println(f);
+        }
+        Constructor con[]=c.getConstructors();
+        for(Constructor cp:con){
+            System.out.println(cp);
         }
     }
 }
