@@ -1,14 +1,26 @@
-public class GenericDemo<T> {
-    T data[] = (T[]) new Object[3]; // typecasting object to type T
+package Introduction_to_java.Generics;
 
-    public static void main(String[] args) {
-        GenericDemo<String> gd = new GenericDemo();
-        /* whatever class name is mention inside <> array will also inherit that */
+class Data<T>{
+    private T obj;
 
-        gd.data[0] = "Hi";
-        gd.data[1] = "Bye";
-        gd.data[2] = "10";
-        System.out.println(gd.data[2]);
-
+    public void setData(T v)
+    {
+        obj = v;
     }
+
+    public T getData(){
+        return obj;
+    }
+}
+public class GenericDemo<T> {
+    public static void main(String[] args) {
+        Data<Integer> d = new Data<>();
+        d.setData(10);
+        System.out.println(d.getData());
+
+        Data<String> d1 = new Data<>();
+        d1.setData("This is string");
+        System.out.println(d1.getData());
+    }
+
 }
