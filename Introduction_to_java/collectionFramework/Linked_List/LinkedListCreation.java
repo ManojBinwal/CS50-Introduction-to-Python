@@ -7,6 +7,12 @@ class Node{   //a node is collection of a data and a reference.
 
 class Linked{
 
+    public Node insertFront(int i , Node node){  //function to insert node at the starting of list
+        Node a = getNewNode(i);  //node a call the method getnewnode which creates a new node and set i as data
+        a.next=node; //sets the reference as next node
+        return a;
+    }
+
     public void printList(Node node){
             if(node==null){
                 return;
@@ -48,6 +54,8 @@ public class LinkedListCreation {
         root = a.insert(12,root);  //inserting element 12 in root node // insert method to insert data
         root = a.insert(44,root);
         root = a.insert(99,root);
+
+        root = a.insertFront(455,root);
 
         a.printList(root);
     }
