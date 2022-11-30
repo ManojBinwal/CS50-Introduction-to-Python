@@ -6,6 +6,11 @@
 // }
 
 // class Linked{
+//     public Node insertFront(int i , Node node){
+//         Node a = getNewNode(i);
+//         a.next=node;
+//         return a;
+//     }
 
 //     public void printList(Node node){
 //         if(node == null ){
@@ -34,7 +39,7 @@
 
 // }
 
-// public class LinkedListCreation1 {
+// public class LinkedListCreationIterative {
 //     public static void main(String[] args) {
 
 //     Linked a = new Linked();
@@ -42,6 +47,8 @@
 //     root = a.insert(12,root);
 //     root = a.insert(44,root);
 //     root = a.insert(36,root);
+
+//     root=a.insertFront(567, root);
 
 //     a.printList(root);
         
